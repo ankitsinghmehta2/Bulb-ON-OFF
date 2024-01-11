@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       pre {
+            background-color: black;
+        }
+        code{
+            color: rgb(71, 173, 51);
+            font-size: 18px;
+        }
+
+        div {
+            margin-left: 35%;
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+    <code>
+        <h2>      ON / OFF Bulb code</h3>
+        &lt;button onclick="bulbon()" Turn ON the bulb/button&gt;
+        &lt;img id="bulb" src="./pic_bulboff.gif" alt=""&gt;
+        &lt;button onclick="bulboff()"
+        &gt;Turn OFF the bulb&lt;/button&gt;
+
+        &gt; script &gt;
+       &gt; const imagee = document.getElementById("bulb")&gt;
+       &gt; bulbon = () => imagee.src = "./pic_bulbon.gif"&gt;
+       &gt; bulboff = () => imagee.src = "./pic_bulboff.gif"&gt;
+       &gt; /script &gt;
+    </code>
+</pre>
+    <div>
+        <button onclick="bulbon()">Turn ON the bulb</button>
+        <img id="bulb" src="./img all/pic_bulboff.gif" alt="">
+        <button onclick="bulboff()">Turn OFF the bulb</button>
+    </div>
+    <script>
+        const imagee = document.getElementById("bulb")
+        bulbon = () => imagee.src = "./img all/pic_bulbon.gif"
+        bulboff = () => imagee.src = "./img all/pic_bulboff.gif"
+    </script>
+</body>
+</html>
